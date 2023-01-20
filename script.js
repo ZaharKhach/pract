@@ -23,7 +23,7 @@
 
 'use strict';
 
-const numberOfFilms = "5 фильмов";
+const numberOfFilms = prompt("Сколько фильмов вы уже просмотрели?");
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -32,9 +32,11 @@ const personalMovieDB = {
     genres: [ ],
     privat: false
 }
+console.log(personalMovieDB.count);
 
 const lastFilm = prompt('Один из последних просмотренных фильмов?','Человек-гандон');
 const rateFilm = prompt('На сколько оцените его?', '5');
+
 const movies =  {}
 movies[lastFilm] = rateFilm;
 console.log(movies);
