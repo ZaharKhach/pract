@@ -32,13 +32,15 @@ const personalMovieDB = {
     genres: [ ],
     privat: false
 }
-console.log(personalMovieDB.count);
 
 const lastFilm = prompt('Один из последних просмотренных фильмов?','Человек-гандон');
 const rateFilm = prompt('На сколько оцените его?', '5');
+const lastFilm2 = prompt('Один из последних просмотренных фильмов?','Человек-гандон');
+const rateFilm2 = prompt('На сколько оцените его?', '5');
 
-const movies =  {}
-movies[lastFilm] = rateFilm;
-console.log(movies);
+personalMovieDB.movies[lastFilm] = rateFilm;
+personalMovieDB.movies[lastFilm2] = rateFilm2;
+
+console.log(personalMovieDB.movies);
 
 // console.log(movies[lastFilm]);
