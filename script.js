@@ -23,7 +23,7 @@
 
 'use strict';
 
-const numberOfFilms = "Я посмотрел 5 фильмов";
+const numberOfFilms = "5 фильмов";
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -35,7 +35,10 @@ const personalMovieDB = {
 
 const lastFilm = prompt('Один из последних просмотренных фильмов?','Человек-гандон');
 const rateFilm = prompt('На сколько оцените его?', '5');
-
 const movies =  {
- lastFilm: rateFilm
+
 }
+movies[lastFilm] = rateFilm;
+console.log(movies);
+
+// console.log(movies[lastFilm]);
