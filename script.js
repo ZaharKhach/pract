@@ -23,3 +23,19 @@
 
 'use strict';
 
+const numberOfFilms = "Я посмотрел 5 фильмов";
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: { },
+    actors: { },
+    genres: [ ],
+    privat: false
+}
+
+const lastFilm = prompt('Один из последних просмотренных фильмов?','Человек-гандон');
+const rateFilm = prompt('На сколько оцените его?', '5');
+
+const movies =  {
+ lastFilm: rateFilm
+}
